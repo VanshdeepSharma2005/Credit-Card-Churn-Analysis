@@ -1,80 +1,143 @@
-# Credit Card Churn Analysis
+# 💳 Credit Card Churn Analysis
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyzes customer churn in the banking sector using Python, SQL, and Excel. The goal is to understand customer behavior, identify the factors contributing to churn, and gain business insights through Exploratory Data Analysis (EDA).
+This project analyzes customer churn in the banking sector using **Python, SQL, Excel, Pandas, Matplotlib, and Seaborn**.
 
-The project demonstrates an end-to-end analytics workflow including dataset inspection, data cleaning using Pandas, feature engineering with SQL, and visualization using Python libraries.
+The objective is to understand customer behavior, identify factors influencing churn, and generate meaningful business insights through Exploratory Data Analysis (EDA).
+
+Unlike a machine learning project, this project focuses on the complete **data analysis workflow**, including data cleaning, SQL feature engineering, visualization, and business insight generation.
 
 ---
 
-## Objectives
+# 🎯 Objectives
 
-- Inspect and understand the raw dataset.
-- Clean and preprocess customer data using Python (Pandas).
-- Create additional business features using SQL joins.
+- Inspect and understand the customer dataset.
+- Clean and preprocess banking customer data.
+- Create new business-related features using SQL.
 - Perform Exploratory Data Analysis (EDA).
-- Generate insights about customer churn.
+- Visualize customer behavior and churn patterns.
+- Generate actionable business insights.
 
 ---
 
-## Tools & Technologies
+# 🛠️ Technologies Used
 
-- Microsoft Excel (Dataset Inspection)
-- MySQL (SQL Joins & Feature Engineering)
 - Python
 - Pandas
 - Matplotlib
 - Seaborn
+- SQL (MySQL)
+- Microsoft Excel
+- VS Code
+- Git
+- GitHub
 
 ---
 
-## Project Workflow
+# 📂 Project Workflow
 
-### 1. Dataset Inspection
-- Loaded and reviewed the raw dataset in Microsoft Excel.
-- Understood the dataset structure and column information.
+## Step 1 — Dataset Inspection (Excel)
 
-### 2. Data Cleaning (Python - Pandas)
-- Checked missing values.
-- Removed inconsistencies.
-- Verified data types.
-- Cleaned and prepared the dataset for analysis.
+- Inspected the BankChurners dataset.
+- Reviewed columns, data types, and overall structure.
+- Performed initial data validation.
 
-### 3. Feature Engineering (SQL)
-Used SQL joins to create two additional business-related features:
-- Reward_Rate
-- Annual_Fee
+---
 
-The enriched dataset was exported as **Final_Bank_Churners.csv** for analysis.
+## Step 2 — Data Cleaning (Python - Pandas)
 
-### 4. Exploratory Data Analysis (EDA)
+Performed data preprocessing using Pandas:
 
-Performed EDA using:
+- Checked missing values
+- Verified duplicate records
+- Inspected data consistency
+- Prepared a cleaned dataset
+
+**Output**
+
+`cleaned_bank_churners.csv`
+
+---
+
+## Step 3 — Feature Engineering (SQL)
+
+Used SQL JOIN operations to enrich the dataset by adding two new business-related columns:
+
+- Reward Rate
+- Annual Fees
+
+Created the final transformed dataset.
+
+**Output**
+
+`Final_Bank_Churners.csv`
+
+---
+
+## Step 4 — Exploratory Data Analysis (EDA)
+
+Performed both **Univariate** and **Bivariate Analysis** using:
+
 - Pandas
 - Matplotlib
 - Seaborn
 
-Created visualizations including:
+Generated various visualizations including:
+
 - Count Plots
 - Bar Charts
 - Box Plots
 - Histograms
+- Distribution Plots
 - Correlation Analysis
 
 ---
 
-## Key Insights
+# 📊 Dashboard
 
-- Approximately **84%** of customers are existing customers, while **16%** have churned.
-- Customer demographics influence churn patterns.
-- Credit utilization varies across customer groups.
-- Different card categories show different churn behavior.
-- Reward Rate and Annual Fee provide additional business context for customer analysis.
+![Dashboard](Dashboard.jpeg)
 
 ---
 
-## Project Structure
+# 📈 Visualizations
+
+## Customer Status Distribution
+
+![Customer Status Distribution](Customer_Status_Distribution.png)
+
+---
+
+## Customer Age Distribution
+
+![Customer Age Distribution](Customer_Age_Distribution.png)
+
+---
+
+## Credit Limit Box Plot
+
+![Credit Limit Boxplot](Credit_Limit_Boxplot.png)
+
+---
+
+## Gender vs Customer Status
+
+![Gender vs Customer Status](Gender%20vs%20Customer_status%20plot.png)
+
+---
+
+# 📈 Key Insights
+
+- Approximately **84%** of customers are existing customers.
+- Around **16%** of customers have churned.
+- Churn varies across different card categories.
+- Customer demographics influence churn behavior.
+- Credit limit distribution highlights the presence of high-value customers.
+- Reward Rate and Annual Fees were added using SQL joins to enrich the dataset for better business analysis.
+
+---
+
+# 📁 Repository Structure
 
 ```
 Credit-Card-Churn-Analysis/
@@ -82,59 +145,49 @@ Credit-Card-Churn-Analysis/
 ├── BankChurners.csv
 ├── cleaned_bank_churners.csv
 ├── Final_Bank_Churners.csv
+├── credit_card_churn.sql
 ├── data_cleaning.py
 ├── eda.py
-├── credit_card_churn.sql
-├── churn_rate_1.sql
-├── churn_rate_2.sql
-├── cleaned_final_table.sql
-├── screenshots/
+├── Dashboard.jpeg
+├── Customer_Status_Distribution.png
+├── Customer_Age_Distribution.png
+├── Credit_Limit_Boxplot.png
+├── Gender vs Customer_status plot.png
 ├── README.md
-└── requirements.txt
+└── LICENSE
 ```
 
 ---
 
-## Skills Demonstrated
+# 💼 Skills Demonstrated
 
-- Data Cleaning using Pandas
-- SQL Joins
+- Data Cleaning
+- Data Preprocessing
 - Feature Engineering
+- SQL JOIN Operations
 - Exploratory Data Analysis (EDA)
 - Data Visualization
 - Business Insight Generation
 - Python Programming
-- SQL Query Writing
+- Git & GitHub
 
 ---
 
-## Libraries Used
+# 🚀 Future Improvements
 
-- Pandas
-- Matplotlib
-- Seaborn
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Future Improvements
-
-- Build machine learning models for churn prediction.
+- Develop a Machine Learning model for churn prediction.
 - Compare multiple classification algorithms.
-- Develop an interactive dashboard using Power BI or Streamlit.
+- Build an interactive dashboard using Power BI or Streamlit.
+- Deploy the project as a web application.
 
 ---
 
-## Author
+# 👨‍💻 Author
 
 **Vanshdeep Sharma**
 
 Aspiring Data Analyst
 
-- GitHub: https://github.com/VanshdeepSharma2005
-- LinkedIn: *(Add your LinkedIn profile link here.)*
+### Technical Skills
+
+Python • SQL • Pandas • Matplotlib • Seaborn • Excel • Data Analysis • Git • GitHub
