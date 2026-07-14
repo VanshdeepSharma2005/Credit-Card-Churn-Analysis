@@ -100,31 +100,25 @@ Generated various visualizations including:
 
 ---
 
-# 📈 Visualizations
+## 📊 Visualizations
 
-## Customer Status Distribution
-
-![Customer Status Distribution](Customer_Status_Distribution.png)
-
----
-
-## Customer Age Distribution
-
-![Customer Age Distribution](Customer_Age_Distribution.png)
+### Customer Status Distribution
+![Customer Status Distribution](images/Customer_Status_Distribution.png)
 
 ---
 
-## Credit Limit Box Plot
+### Customer Age Distribution
+![Customer Age Distribution](images/Customer_Age_Distribution.png)
 
-![Credit Limit Boxplot](Credit_Limit_Boxplot.png)
+---
+
+### Credit Limit Distribution
+![Credit Limit Distribution](images/Credit_limit_budget.png)
 
 ---
 
-## Gender vs Customer Status
-
-![Gender vs Customer Status](Gender%20vs%20Customer_status%20plot.png)
-
----
+### Gender vs Customer Status
+![Gender vs Customer Status](images/Gender_vs_Customer_Status.png)
 
 # 📈 Key Insights
 
