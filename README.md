@@ -137,28 +137,6 @@ Generated various visualizations including:
 
 ---
 
-# 📁 Repository Structure
-
-```
-Credit-Card-Churn-Analysis/
-│
-├── BankChurners.csv
-├── cleaned_bank_churners.csv
-├── Final_Bank_Churners.csv
-├── credit_card_churn.sql
-├── data_cleaning.py
-├── eda.py
-├── Dashboard.jpeg
-├── Customer_Status_Distribution.png
-├── Customer_Age_Distribution.png
-├── Credit_Limit_Boxplot.png
-├── Gender vs Customer_status plot.png
-├── README.md
-└── LICENSE
-```
-
----
-
 # 💼 Skills Demonstrated
 
 - Data Cleaning
