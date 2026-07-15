@@ -20,3 +20,5 @@ THEN 1 ELSE 0 END) * 100.0 / COUNT(*),2) AS Churn_Rate
 FROM customers
 GROUP BY Age_Group
 ORDER BY Churn_Rate DESC;
+
+-- Age between 40 and 55 have most churned
