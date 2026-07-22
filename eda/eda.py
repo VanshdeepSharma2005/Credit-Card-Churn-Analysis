@@ -53,3 +53,66 @@ plt.show()
 # Insight:
 # Compare the proportion of churned customers between males and females
 # to identify whether one group experiences higher churn.
+
+contact_churn = pd.crosstab(
+    df["Contact_Count"],
+    df["Customer_Status"],
+    normalize="index"
+) * 100
+
+sns.barplot(
+    x=contact_churn.index,
+    y=contact_churn["Attrited Customer"]
+)
+
+plt.title("Churn Rate by Contact Count")
+plt.xlabel("Number of Contacts ")
+plt.ylabel("Churn Rate (%)")
+plt.show()
+
+income_churn = pd.crosstab(
+    df["Income_Category"],
+    df["Customer_Status"],
+    normalize="index"
+) * 100
+
+sns.barplot(
+    x=income_churn.index,
+    y=income_churn["Attrited Customer"]
+)
+
+plt.title("Churn Rate by Income Category")
+plt.xlabel("Income Category")
+plt.ylabel("Churn Rate (%)")
+plt.xticks(rotation=45)
+plt.show()
+
+card_churn = pd.crosstab(
+    df["Card_Category"],
+    df["Customer_Status"],
+    normalize="index"
+) * 100
+
+sns.barplot(
+    x=card_churn.index,
+    y=card_churn["Attrited Customer"]
+)
+
+plt.title("Churn Rate by Card Category")
+plt.ylabel("Churn Rate (%)")
+plt.show()
+
+contact_churn = pd.crosstab(
+    df["Contacts_Count_12_mon"],
+    df["Customer_Status"],
+    normalize="index"
+) * 100
+
+sns.barplot(
+    x=contact_churn.index,
+    y=contact_churn["Attrited Customer"]
+)
+
+plt.title("Churn Rate by Contact Count")
+plt.ylabel("Churn Rate (%)")
+plt.show()
